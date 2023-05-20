@@ -1,0 +1,33 @@
+.shoppingBasket{
+  padding: 0 20px;
+  .list{
+    list-style: none;
+    padding: 0;
+
+    >li{
+      display: flex;
+    }
+  }
+  .itemDeatils{
+    padding: 0 10px;
+    button{
+      padding: 5px;
+      background-color: #ff9f00;
+      border: 1px solid;
+      padding: 5px 10px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    p{
+      margin-bottom: 0;
+    }
+  }
+  .imageHolder{
+    padding: 0 10px;
+    >img{
+      width: auto;
+      max-height: 150px;
+      object-fit: contain;
+    }
+  }
+}

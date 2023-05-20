@@ -1,0 +1,36 @@
+.productList{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  position: relative;
+  padding: 1rem;
+  background: linear-gradient(0deg, #ccc 85%, transparent);
+
+  &::after{
+    display: block;
+    content: "";
+    clear: both;
+  }
+  .card{
+    background-color: whitesmoke;
+    padding: 20px;
+  }
+
+  .imageHolder{
+    text-align: center;
+    position: relative;
+    >img{
+      width: auto;
+      max-height: 250px;
+      object-fit: contain;
+    }
+    button{
+      padding: 5px;
+      background-color: #ff9f00;
+      border: 1px solid;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  }
+}
